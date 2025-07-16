@@ -16,27 +16,87 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Oscar Mugisha</h1>
           <p className="text-xl text-gray-600 mb-6">Aspiring Economist & Creator of Rwanda EconTracker</p>
           <div className="flex justify-center space-x-4">
-            <a href="mailto:oscarmugisha250@gmail.com" target="_blank" rel="noopener noreferrer">
-  <Button variant="outline" size="sm" className="w-full justify-start mb-2">
-    <Mail className="mr-2 h-4 w-4" />
-    Email Me
-  </Button>
-</a>
+            <div className="flex flex-col space-y-4 mt-6 max-w-md">
+  {/* Phone */}
+  <div className="flex items-center space-x-3">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6 text-gray-700"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 5a2 2 0 012-2h3.6a1 1 0 011 1v3.6a1 1 0 01-1 1H6.41a12.042 12.042 0 005.292 5.292v-1.188a1 1 0 011-1h3.6a1 1 0 011 1v3.6a2 2 0 01-2 2h-1.578c-8.04 0-10.912-10.912-10.912-10.912z"
+      />
+    </svg>
+    <span className="text-gray-800 font-medium">+250 798 499 709</span>
+  </div>
 
-<a href="https://www.linkedin.com/in/oscarmugisha/" target="_blank" rel="noopener noreferrer">
-  <Button variant="outline" size="sm" className="w-full justify-start mb-2">
-    <Linkedin className="mr-2 h-4 w-4" />
-    LinkedIn
-  </Button>
-</a>
+  {/* Email */}
+  <a
+    href="mailto:oscarmugisha2@gmail.com"
+    className="flex items-center space-x-3 text-blue-600 hover:underline"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M16 12H8m8 0a4 4 0 10-8 0 4 4 0 008 0zm4 8v-8a4 4 0 00-4-4H8a4 4 0 00-4 4v8"
+      />
+    </svg>
+    <span>oscarmugisha2@gmail.com</span>
+  </a>
 
-{/* Optional: Remove this Twitter block if you don’t use Twitter */}
-<a href="https://twitter.com/oscarmugisha" target="_blank" rel="noopener noreferrer">
-  <Button variant="outline" size="sm" className="w-full justify-start">
-    <Twitter className="mr-2 h-4 w-4" />
-    Twitter
-  </Button>
-</a>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/oscar-mugisha1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center space-x-3 text-blue-700 hover:underline"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75S5.53 4.25 6.5 4.25 8.25 5.03 8.25 6 7.47 7.75 6.5 7.75zm13.5 11.25h-3v-5.5c0-1.33-1.67-1.23-1.67 0v5.5h-3v-10h3v1.37c1.39-2.58 6-2.78 6 2.47v6.16z" />
+    </svg>
+    <span>LinkedIn Profile</span>
+  </a>
+
+  {/* X (formerly Twitter) */}
+  <a
+    href="https://x.com/mugisha_rw?t=IDtLIhSLQIWhpQpQUZJGnw&s=08"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center space-x-3 text-blue-500 hover:underline"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M23.954 4.569c-.885.39-1.83.654-2.825.775a4.958 4.958 0 002.163-2.723 9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.38 4.482 13.948 13.948 0 01-10.141-5.146 4.822 4.822 0 001.523 6.574 4.897 4.897 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.925 4.925 0 004.604 3.417A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.209c9.056 0 14.004-7.496 14.004-13.986 0-.21 0-.423-.015-.633a9.936 9.936 0 002.46-2.548l-.001-.001z" />
+    </svg>
+    <div>
+      <span>X (formerly Twitter)</span>
+      <p className="text-xs text-gray-600">@mugisha_rw</p>
+    </div>
+  </a>
+</div>
 
           </div>
         </div>
