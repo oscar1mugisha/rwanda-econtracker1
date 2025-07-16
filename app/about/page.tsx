@@ -16,18 +16,28 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Oscar Mugisha</h1>
           <p className="text-xl text-gray-600 mb-6">Aspiring Economist & Creator of Rwanda EconTracker</p>
           <div className="flex justify-center space-x-4">
-            <Button variant="outline" size="sm">
-              <Mail className="mr-2 h-4 w-4" />
-              Email Me
-            </Button>
-            <Button variant="outline" size="sm">
-              <Linkedin className="mr-2 h-4 w-4" />
-              LinkedIn
-            </Button>
-            <Button variant="outline" size="sm">
-              <Twitter className="mr-2 h-4 w-4" />
-              Twitter
-            </Button>
+            <a href="mailto:oscarmugisha250@gmail.com" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" size="sm" className="w-full justify-start mb-2">
+    <Mail className="mr-2 h-4 w-4" />
+    Email Me
+  </Button>
+</a>
+
+<a href="https://www.linkedin.com/in/oscarmugisha/" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" size="sm" className="w-full justify-start mb-2">
+    <Linkedin className="mr-2 h-4 w-4" />
+    LinkedIn
+  </Button>
+</a>
+
+{/* Optional: Remove this Twitter block if you don’t use Twitter */}
+<a href="https://twitter.com/oscarmugisha" target="_blank" rel="noopener noreferrer">
+  <Button variant="outline" size="sm" className="w-full justify-start">
+    <Twitter className="mr-2 h-4 w-4" />
+    Twitter
+  </Button>
+</a>
+
           </div>
         </div>
 
