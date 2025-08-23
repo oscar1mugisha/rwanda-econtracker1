@@ -73,7 +73,7 @@ const featuredInsights = [
   },
 ]
 
-export default function HomePage() {
+export default function HomePage({ darkMode, setDarkMode }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Hero Section */}
@@ -86,16 +86,20 @@ export default function HomePage() {
 >
             Your gateway to understanding Rwanda's economy in real time.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary text-primary-foreground dark:bg-secondary dark:text-secondary-foreground hover:bg-blue-700 transition"
->
-              Explore Indicators
-            </Button>
-            <Button size="lg" className="border border-primary text-primary-foreground dark:border-secondary dark:text-secondary-foreground hover:bg-secondary hover:text-background transition"
->
-              Learn Economics
-            </Button>
-          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+  <Button size="lg" className="bg-primary text-primary-foreground dark:bg-secondary dark:text-secondary-foreground hover:bg-blue-700 transition">
+    Explore Indicators
+  </Button>
+  <Button size="lg" className="border border-primary text-primary-foreground dark:border-secondary dark:text-secondary-foreground hover:bg-secondary hover:text-background transition">
+    Learn Economics
+  </Button>
+  <button
+    onClick={() => setDarkMode(!darkMode)}
+    className="mt-4 sm:mt-0 ml-0 sm:ml-4 px-4 py-2 rounded bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+  >
+    Toggle Dark Mode
+  </button>
+</div>
         </div>
       </section>
 
