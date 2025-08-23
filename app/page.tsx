@@ -87,10 +87,12 @@ export default function HomePage() {
             Your gateway to understanding Rwanda's economy in real time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-primary text-primary-foreground dark:bg-secondary dark:text-secondary-foreground hover:bg-blue-700 transition"
+>
               Explore Indicators
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" className="border border-primary text-primary-foreground dark:border-secondary dark:text-secondary-foreground hover:bg-secondary hover:text-background transition"
+>
               Learn Economics
             </Button>
           </div>
