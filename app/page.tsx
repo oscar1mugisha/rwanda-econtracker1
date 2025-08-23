@@ -108,7 +108,8 @@ export default function HomePage() {
               const IconComponent = indicator.icon
               return (
                 <Link key={indicator.id} href={`/indicators/${indicator.id}`}>
-                  <Card className="hover:shadow-lg transition-all duration-300 cursor-pointer border-0 shadow-md">
+                  <Card className="hover:shadow-lg transition-all duration-300 cursor-pointer border-0 shadow-md bg-card dark:bg-muted text-card-foreground dark:text-muted-foreground"
+>
                     <CardHeader className="pb-3">
                       <div className="flex items-center justify-between">
                         <div className={`p-3 rounded-full ${indicator.bgColor}`}>
