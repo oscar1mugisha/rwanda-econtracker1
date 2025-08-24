@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -74,9 +75,10 @@ const featuredInsights = [
   },
 ]
 
-export default function HomePage({ darkMode, setDarkMode }) {
+export default function HomePage() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+    <div className={`min-h-screen bg-gradient-to-br from-blue-50 to-green-50 ${darkMode ? "dark" : ""}`}>
       {/* Hero Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
