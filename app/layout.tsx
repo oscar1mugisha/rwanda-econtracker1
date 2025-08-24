@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/context/ThemeContext";
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -22,10 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
+  <ThemeProvider>
+    <Navigation />
+    <main>{children}</main>
+    <Footer />
+  </ThemeProvider>
+</body>
   )
 }
