@@ -1,10 +1,10 @@
-"use client"; // needed because we use state in ThemeProvider
+// app/layout.tsx
 
-import { ThemeProvider } from "@/context/ThemeContext";
-import type React from "react";
 import type { Metadata } from "next";
+import type React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
@@ -23,15 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <ThemeProvider>
-        <body className={`${inter.className} bg-background text-foreground transition-colors duration-300`}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.className} bg-background text-foreground transition-colors duration-300`}
+      >
+        {/* ThemeProvider must be inside <body> in a Server Component layout */}
+        <ThemeProvider>
           <Navigation />
           <main>{children}</main>
           <Footer />
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
-  
