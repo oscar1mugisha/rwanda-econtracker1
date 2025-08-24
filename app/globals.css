@@ -1,7 +1,48 @@
+/* Light mode colors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+  --card-bg: #f9fafb;
+  --card-text: #111827;
+  --primary-color: #3b82f6;
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+  --bg-color: #111827;
+  --text-color: #f9fafb;
+  --card-bg: #1f2937;
+  --card-text: #f9fafb;
+  --primary-color: #3b82f6;
+}
+
+/* Apply the variables to elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --card-bg: #f9fafb;
+  --card-foreground: #111827;
+}
+
+[data-theme='dark'] {
+  --background: #111827;
+  --foreground: #f9fafb;
+  --card-bg: #1f2937;
+  --card-foreground: #f9fafb;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 0 0% 100%;
